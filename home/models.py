@@ -2,8 +2,8 @@ from __future__ import absolute_import, unicode_literals
 
 from django.db import models
 
-from wagtail.wagtailcore.models import Page
-from wagtail.wagtailimages.models import Image, AbstractImage, AbstractRendition
+from wagtail.core.models import Page
+from wagtail.images.models import Image, AbstractImage, AbstractRendition
 
 
 class HomePage(Page):
