@@ -55,7 +55,7 @@ class Migration(migrations.Migration):
                 ('width', models.IntegerField(editable=False)),
                 ('height', models.IntegerField(editable=False)),
                 ('focal_point_key', models.CharField(blank=True, default='', editable=False, max_length=255)),
-                ('filter', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='+', to='wagtailimages.Filter')),
+                ('filter', models.IntegerField(blank=True, null=True)),
                 ('image', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='renditions', to='home.CustomImage')),
             ],
         ),
